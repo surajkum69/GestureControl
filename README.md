@@ -1,12 +1,12 @@
 # GestureControl
 This project implements a hand gesture-based volume control system using a webcam. The system utilizes MediaPipe for hand landmark detection and pycaw to control the system's volume based on the distance and movement of specific hand landmarks (thumb and index finger).
-**Features**
+## Features
 Real-time hand gesture recognition using the webcam.
 Dynamic volume control based on the distance between the thumb and index finger.
 Fine-tuned volume adjustment using vertical hand movements.
 Customizable sensitivity and scaling for volume changes
 
-**Prerequisites**
+## Prerequisites
 Before running the project, ensure you have installed the following dependencies:
 
 Python 3.x
@@ -18,7 +18,7 @@ Comtypes (comtypes)
 You can install the dependencies using the following command:
 *pip install opencv-python mediapipe numpy pycaw comtypes*
 
-**Usage**
+## Usage
 Clone the repository:
 
 *git clone <repository_url>*
@@ -34,7 +34,7 @@ Pinching your thumb and index finger together to change the volume.
 Moving your hand upwards to increase the volume or downwards to decrease it.
 Press 'q' to exit the program.
 
-**Key Components**
+## Key Components
 MediaPipe Hands: Used for detecting hand landmarks such as thumb and index finger.
 Pycaw: Interface with system audio to control the volume based on detected gestures.
 OpenCV: Captures and processes video frames from the webcam.
@@ -47,5 +47,5 @@ Sensitivity: Adjust the value of sensitivity in the main() function to change th
 Scaling Factor: Modify scaling_factor to fine-tune the volume adjustment rate (default is 0.2).
 
 
-**Error Handling**
+## Error Handling
 If any of the required libraries are missing, the script will output an appropriate error message, prompting you to install the missing dependencies.
